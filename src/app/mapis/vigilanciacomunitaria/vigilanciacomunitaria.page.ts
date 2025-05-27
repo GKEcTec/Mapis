@@ -22,12 +22,21 @@ export class VigilanciacomunitariaPage implements OnInit {
   get filteredUvcs() {
     if (!this.searchTerm) return this.uvcs;
 
-    const term = this.searchTerm.toLowerCase();
+    // const term = this.searchTerm.toLowerCase();
 
-    return this.uvcs.filter((uvc) => {
-      const contenido = JSON.stringify(uvc).toLowerCase();
-      return contenido.includes(term);
-    });
+    // return this.uvcs.filter((uvc) => {
+    //   const contenido = JSON.stringify(uvc).toLowerCase();
+    //   return contenido.includes(term);
+    // });
+      //  const term = this.searchTerm.toUpperCase();
+	    //  const resultado = this.uvcs.filter(uvc => uvc.PROVINCIA === term );
+	    //  return JSON.stringify(resultado);
+      const term = this.searchTerm.trim().toLowerCase();
+
+      return this.uvcs.filter(uvc =>
+       uvc.PROVINCIA &&
+       uvc.PROVINCIA.toLowerCase().includes(term)
+      );
   }
 
   verEnMaps(uvc: any) {

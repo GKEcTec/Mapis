@@ -21,20 +21,27 @@
             <div class="boton-icono">
               <ion-icon name="checkmark-circle-outline"></ion-icon>
             </div>
-            <div class="boton-texto1">Contenidos Conceptuales</div>
+            <div class="boton-texto1">Violencia: definiciones</div>
           </div>
         </ion-label>
       </ion-item>
-      <ion-item
-        button
-        (click)="descargarPDF('https://drive.google.com/file/d/1bYUG8Qyjh-5l5YjCAg7sGqZW9ngT5ubh/view?usp=sharing')"
-      >
+      <ion-item routerLink="/acciones2">
         <ion-label>
           <div class="boton">
             <div class="boton-icono">
-              <ion-icon name="cloud-download-outline"></ion-icon>
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
             </div>
-            <div class="boton-texto1">Ruta de atención MAPIS</div>
+            <div class="boton-texto1">¿Qué son las acciones urgentes?</div>
+          </div>
+        </ion-label>
+      </ion-item>
+      <ion-item routerLink="/descripcion2">
+        <ion-label>
+          <div class="boton">
+            <div class="boton-icono">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </div>
+            <div class="boton-texto1">Descripciones urgentes</div>
           </div>
         </ion-label>
       </ion-item>
@@ -47,7 +54,19 @@
             <div class="boton-icono">
               <ion-icon name="cloud-download-outline"></ion-icon>
             </div>
-            <div class="boton-texto1">Ejecución de Acciones Urgentes</div>
+            <div class="boton-texto1">Instructivo de Acciones Urgentes</div>
+          </div>
+        </ion-label>
+      </ion-item>
+      <ion-item routerLink="/violenciometro">
+        <ion-label>
+          <div class="boton">
+            <div class="boton-icono">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </div>
+            <div class="boton-texto1">
+              Violentómetro<br />
+            </div>
           </div>
         </ion-label>
       </ion-item>
@@ -63,7 +82,7 @@
           </div>
         </ion-label>
       </ion-item>
-      <ion-item routerLink="/cicloviolencia">
+      <!-- <ion-item routerLink="/cicloviolencia">
         <ion-label>
           <div class="boton">
             <div class="boton-icono">
@@ -72,24 +91,7 @@
             <div class="boton-texto1">Ciclo de la Violencia</div>
           </div>
         </ion-label>
-      </ion-item>
-      
-      
-      <ion-item routerLink="/violenciometro">
-        <ion-label>
-          <div class="boton">
-            <div class="boton-icono">
-              <ion-icon name="checkmark-circle-outline"></ion-icon>
-            </div>
-            <div class="boton-texto1">
-              Revisa el evaluador <br />
-              de violencia
-            </div>
-          </div>
-        </ion-label>
-      </ion-item>
-      
-
+      </ion-item> -->
       <ion-item routerLink="/vigilanciacomunitaria">
         <ion-label>
           <div class="boton">
@@ -97,8 +99,8 @@
               <ion-icon name="checkmark-circle-outline"></ion-icon>
             </div>
             <div class="boton-texto1">
-              Unidades de vigilancia <br />
-              comunitaria
+              Unidades de Vigilancia <br />
+              Comunitaria (UVC)
             </div>
           </div>
         </ion-label>
@@ -109,71 +111,65 @@
             <div class="boton-icono">
               <ion-icon name="checkmark-circle-outline"></ion-icon>
             </div>
-            <div class="boton-texto1">Encuentra las UPC</div>
-          </div>
-        </ion-label>
-      </ion-item>
-     
-      <ion-item
-        button
-        (click)="descargarPDF('https://www.derechoshumanos.gob.ec/servicio-de-proteccion-integral/')"
-      >
-        <ion-label>
-          <div class="boton">
-            <div class="boton-icono">
-              <ion-icon name="cloud-download-outline"></ion-icon>
-            </div>
-            <div class="boton-texto1">Servicio de Protección Integral</div>
-          </div>
-        </ion-label>
-      </ion-item>
-      <ion-item
-        button
-        (click)="descargarPDF('https://www.derechoshumanos.gob.ec/centro-violeta-mmdh/')"
-      >
-        <ion-label>
-          <div class="boton">
-            <div class="boton-icono">
-              <ion-icon name="cloud-download-outline"></ion-icon>
-            </div>
-            <div class="boton-texto1">Centro Violeta</div>
-          </div>
-        </ion-label>
-      </ion-item>
-      <ion-item routerLink="/acciones2">
-        <ion-label>
-          <div class="boton">
-            <div class="boton-icono">
-              <ion-icon name="checkmark-circle-outline"></ion-icon>
-            </div>
-            <div class="boton-texto1">Acciones Urgentes</div>
-          </div>
-        </ion-label>
-      </ion-item>
-
-      <ion-item routerLink="/descripcion2">
-        <ion-label>
-          <div class="boton">
-            <div class="boton-icono">
-              <ion-icon name="checkmark-circle-outline"></ion-icon>
-            </div>
-            <div class="boton-texto1">Descripción de Procedimiento</div>
-          </div>
-        </ion-label>
-      </ion-item>
-
-      <ion-item routerLink="/procedimientopol">
-        <ion-label>
-          <div class="boton">
-            <div class="boton-icono">
-              <ion-icon name="checkmark-circle-outline"></ion-icon>
-            </div>
             <div class="boton-texto1">
-              Procedimiento Policial en la <br />notificación y ejecución de<br />MAPIs.
+              Unidades de Policia <br />
+              Comunitaria (UPC)
             </div>
           </div>
         </ion-label>
       </ion-item>
+      
+      <ion-item
+      button
+      (click)="descargarPDF('https://www.derechoshumanos.gob.ec/servicio-de-proteccion-integral/')"
+      >
+      <ion-label>
+        <div class="boton">
+          <div class="boton-icono">
+            <ion-icon name="cloud-download-outline"></ion-icon>
+          </div>
+          <div class="boton-texto1">Servicio de Protección Integral</div>
+        </div>
+      </ion-label>
+    </ion-item>
+    <ion-item
+    button
+    (click)="descargarPDF('https://www.derechoshumanos.gob.ec/centro-violeta-mmdh/')"
+    >
+    <ion-label>
+      <div class="boton">
+        <div class="boton-icono">
+          <ion-icon name="cloud-download-outline"></ion-icon>
+        </div>
+        <div class="boton-texto1">Centro Violeta</div>
+      </div>
+    </ion-label>
+  </ion-item>
+  <ion-item
+    button
+    (click)="descargarPDF('https://drive.google.com/file/d/1bYUG8Qyjh-5l5YjCAg7sGqZW9ngT5ubh/view?usp=sharing')"
+  >
+    <ion-label>
+      <div class="boton">
+        <div class="boton-icono">
+          <ion-icon name="cloud-download-outline"></ion-icon>
+        </div>
+        <div class="boton-texto1">Ruta de atención MAPIS</div>
+      </div>
+    </ion-label>
+  </ion-item>
+  <ion-item routerLink="/procedimientopol">
+    <ion-label>
+      <div class="boton">
+        <div class="boton-icono">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+        </div>
+        <div class="boton-texto1">
+          Procedimiento
+        </div>
+      </div>
+    </ion-label>
+  </ion-item>
     </div>
     <div class="boton-azul">
       <div class="letra-boton" routerLink="/home2">VOLVER</div>

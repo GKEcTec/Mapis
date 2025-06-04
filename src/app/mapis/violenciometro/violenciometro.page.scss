@@ -1,0 +1,42 @@
+.titulo {
+ text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.texto {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 8px;
+  min-width: 120px;
+}
+.cuadrados {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+}
+
+.cuadro {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}
+
+.amarillo {
+  background-color: #ffd700;
+}
+
+.naranja {
+  background-color: #ff8c00;
+}
+
+.rojo {
+  background-color: #dc143c;
+}
